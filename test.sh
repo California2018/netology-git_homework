@@ -18,3 +18,5 @@ brew install putty
 
 echo 'This is a test script in dev branch'
 echo 'Adding one more line'
+sed -i '' '$d' test.sh 
+echo "echo 'This is a hotfix from the MAIN branch'" >> test.sh
