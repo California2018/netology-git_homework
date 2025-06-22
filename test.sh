@@ -18,3 +18,7 @@ brew install putty
 
 echo 'This is a test script in dev branch'
 echo 'Adding one more line'
+# Можно открыть в редакторе или использовать команды
+# Удалим последнюю строку и добавим новую
+sed -i '' '$d' test.sh # Удалить последнюю строку (для macOS)
+echo "echo 'This is an important feature from the CONFLICT branch'" >> test.sh
